@@ -8,6 +8,7 @@ WORKDIR /app
 COPY package*.json ./
 
 # Instala las dependencias del proyecto
+RUN npm install -g ts-node
 RUN npm install
 
 # Copia el resto del código fuente a /app
